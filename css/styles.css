@@ -1,6 +1,7 @@
 .btn {
-    border: 2px;
-    border-radius: 10px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 50px;
     background-color: salmon;
     color: white;
 }
