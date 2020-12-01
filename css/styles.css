@@ -1,0 +1,12 @@
+.btn {
+    border: solid 2px;
+    border-color: black;
+    border-radius: 50px;
+    background-color: salmon;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
