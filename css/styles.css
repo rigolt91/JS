@@ -10,3 +10,11 @@
 .btn:hover {
     transform: scale(1.2);
 }
+
+.alert {
+    transition: 0.3s;
+}
+
+.alert:hover{
+    transform: scale(1.2);
+}
