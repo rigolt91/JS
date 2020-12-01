@@ -18,3 +18,9 @@
 .alert:hover{
     transform: scale(1.04);
 }
+
+b{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
