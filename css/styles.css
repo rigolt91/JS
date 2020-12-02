@@ -24,3 +24,11 @@ b{
     letter-spacing: 5px;
     font-weight: 300;
 }
+
+h3 {
+    background-color: #153e90;
+    opacity: 0.5;
+    border-left: blue solid 10px;
+    color: white;
+    padding: 10px;
+}
