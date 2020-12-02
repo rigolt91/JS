@@ -1,18 +1,25 @@
 //Variables globales
 const formularioUI = document.querySelector("#formulario")
 const listaActividadesUI = document.getElementById("listaActividades")
+let errorUI = document.getElementById('error')
 let arrayActividades = []
 
 //Funciones
 const CrearItem = (actividad) => {
-    let item = {
-        actividad: actividad,
-        estado: false
+    errorUI.innerHTML = ''
+
+    if(actividad == ""){
+        console.log('Campos vacios')
+        errorUI.innerHTML = "El campo actividad esta vacio."
+    }else{
+        let item = {
+            actividad: actividad,
+            estado: false
+        }
+
+        arrayActividades.push(item)
+        return item
     }
-
-    arrayActividades.push(item)
-
-    return item
 }
 
 const GuardarDB = () => {
@@ -56,6 +63,7 @@ formularioUI.addEventListener('submit', (e) => {
     e.preventDefault()
 
     let actividadUI = document.querySelector("#actividad").value
+
     CrearItem(actividadUI)
     GuardarDB()
 
