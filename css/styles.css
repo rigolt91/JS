@@ -5,6 +5,7 @@
     background-color: salmon;
     color: white;
     transition: 0.3s;
+    box-shadow: 1px 1px 5px #26292ea9;
 }
 
 .btn:hover {
@@ -31,6 +32,7 @@
 
 .alert:hover{
     transform: scale(1.04);
+    box-shadow: 1px 1px 5px #26292ea9;
 }
 
 b{
